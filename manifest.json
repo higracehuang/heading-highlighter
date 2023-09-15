@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Headings Highlighter",
+  "version": "1.0",
+  "description": "Highlights headings on web pages with a light blue background.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon_16.png",
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  }
+}
